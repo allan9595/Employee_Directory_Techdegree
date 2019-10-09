@@ -1,0 +1,28 @@
+.gallery{
+    width: 90%;
+    text-align: center;
+    border: 1px solid $black;
+    border-radius: 5px;
+    margin: 2em auto;
+    background: $gallery-card;
+    img{
+        margin: 1em auto;
+        border-radius: 50%;
+    } 
+    p{
+        color: $black;
+    }   
+}
+
+.gallery:hover{
+    transition: 1s;
+    background: $gallery-card-hover;
+}
+
+@include media-query($desktop-view){
+    .gallery{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

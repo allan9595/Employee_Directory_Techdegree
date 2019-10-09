@@ -303,4 +303,47 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  font-family: 'Roboto', sans-serif;
+  color: #777; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background: #26ad77; }
+
+.container-header {
+  text-align: center; }
+  .container-header h2 {
+    color: #000000; }
+
+@media (min-width: 768px) {
+  .container-header {
+    text-align: unset;
+    width: 90%;
+    margin: auto; } }
+.gallery {
+  width: 90%;
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  margin: 2em auto;
+  background: #dfedea; }
+  .gallery img {
+    margin: 1em auto;
+    border-radius: 50%; }
+  .gallery p {
+    color: #000000; }
+
+.gallery:hover {
+  transition: 1s;
+  background: #0afcc4; }
+
+@media (min-width: 768px) {
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; } }
+
 /*# sourceMappingURL=styles.css.map */

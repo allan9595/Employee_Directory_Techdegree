@@ -1,0 +1,14 @@
+.container-header{
+    text-align: center;
+    h2{
+        color:$black;
+    }
+}
+
+@include media-query($desktop-view){
+    .container-header{
+        text-align: unset;
+        width: 90%;
+        margin: auto;
+    }
+}
