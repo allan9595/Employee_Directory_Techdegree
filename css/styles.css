@@ -344,6 +344,45 @@ body {
   .gallery {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; } }
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 320px;
+    width: 240px; }
+    .gallery img {
+      height: 50px;
+      width: 50px;
+      margin: 20px 0 20px 0; }
+    .gallery .gallery-person-info {
+      margin: 0 2px 0 0; }
+      .gallery .gallery-person-info p {
+        font-size: 11px; } }
+@media (min-width: 1024px) {
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 320px;
+    width: 270px;
+    padding: 20px; }
+    .gallery img {
+      height: 60px;
+      width: 60px;
+      margin: 20px 15px 20px 0; }
+    .gallery .gallery-person-info {
+      margin: 0 2px 0 0; }
+      .gallery .gallery-person-info p {
+        font-size: 12px; } }
+@media (min-width: 768px) {
+  .container-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+    .container-gallery .gallery {
+      margin: 16px auto; } }
+.model {
+  width: 100%;
+  height: 100%;
+  color: #ccc;
+  opacity: 0.5; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,3 +1,9 @@
 @include media-query($desktop-view){
-    display: grid;
+    .container-gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .gallery{
+            margin: 16px auto;
+        }
+    }
 }
