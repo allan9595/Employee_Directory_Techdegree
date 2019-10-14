@@ -74,7 +74,7 @@ const createModel = (person,data,index) => {
 
 const search = (name) => {
     //if the name included, then return true, otherwise return false
-    if(name.toLowerCase().includes($('.search').val())){
+    if(name.toLowerCase().includes($('.search').val().toLowerCase())){
         return true;
     }else{
         return false;
