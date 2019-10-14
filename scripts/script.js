@@ -104,18 +104,12 @@ const fetchData = (gallery) => {
             })
 
             //remove the model outside when click outside the window
-            window.onclick = (e) => {
+             $('body').click((e) => {
                 if($(e.target)[0].className == 'model'){
                     $('.model').remove();
                 }
-            }
+            })
 
-            document.addEventListener('touchstart', (e) => {
-                    if($(e.target)[0].className == 'model'){
-                        $('.model').remove();
-                    }
-                    }
-            ) 
             //add keyup to search input
             $('.search').keyup((e) => {
                 e.preventDefault();
