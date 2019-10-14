@@ -18,7 +18,6 @@ const createGallery = (person) => {
 //create a model
 const createModel = (person,data,index) => {
     let date = new Date(person.dob.date);
-    //console.log(index);
     let indexCurrent = index;
     $('.container-gallery').append(
         `<div class="model">
@@ -93,7 +92,6 @@ const fetchData = (gallery) => {
             }
         })
         .then(data => {
-            //console.log(data);
             //loop through each result
             data.results.map((person) => {
                 createGallery(person);
@@ -112,6 +110,12 @@ const fetchData = (gallery) => {
                 }
             }
 
+            document.addEventListener('touchstart', (e) => {
+                    if($(e.target)[0].className == 'model'){
+                        $('.model').remove();
+                    }
+                    }
+            ) 
             //add keyup to search input
             $('.search').keyup((e) => {
                 e.preventDefault();
