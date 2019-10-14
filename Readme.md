@@ -4,7 +4,7 @@
 
 **Employee_Directory_Techdegree** 
 
-This app calls an [https://randomuser.me/](https://randomuser.me/) and pulls random people's data back. You can search our employees based on their name from keyboard. When you click on the card, it will open a modal. You can toggle forward and back. This project build with HTML, SCSS, and Jquery.
+This app calls the API [https://randomuser.me/](https://randomuser.me/) and pulls random people's data back. You can search our employees based on their name from keyboard. When you click on the card, it will open a modal. You can toggle forward and back. This project build with HTML, SCSS, and Jquery.
 
 You can visit the live version at [https://allan9595.github.io/Employee_Directory_Techdegree/](https://allan9595.github.io/Employee_Directory_Techdegree/)
 
